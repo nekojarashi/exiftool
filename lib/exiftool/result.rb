@@ -16,11 +16,11 @@ class Exiftool
         @to_display_hash[p.display_key] = p.value
         @sym2display[p.sym_key] = p.display_key
 
-        civil_date = p.civil_date
-        if civil_date
-          civil_date_key = "#{p.sym_key}_civil".to_sym
-          @to_hash[civil_date_key] = civil_date
-        end
+        # civil_date = p.civil_date
+        # if civil_date
+        #   civil_date_key = "#{p.sym_key}_civil".to_sym
+        #   @to_hash[civil_date_key] = civil_date
+        # end
       end
       @display2sym = @sym2display.invert
     end
